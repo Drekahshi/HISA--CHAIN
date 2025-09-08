@@ -1,4 +1,4 @@
-# HISA People Chain 2.0: Africa's Resilient Digital Economy
+# HISA People Chain : Africa's Resilient Digital Economy
 
 ## Executive Summary
 
@@ -183,4 +183,5 @@ The protocol's success lies not in its technological sophistication alone, but i
 
 
 *"Ubuntu meets blockchain: I am because we are, and we are because our systems are unbreakable."*
+
 
