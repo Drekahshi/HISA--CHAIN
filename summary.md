@@ -62,7 +62,7 @@ HISA  introduces the **Adaptive Verification Layer (AVL)**, which combines:
 **Branch-Specific Tokens:**
 - **JANI HISA Token**: Environmental conservation activities (tree planting, waste management, water conservation)
 - **JANI Stable**: Stablecoin for green products and services
-- **UMOJA Token**: Community asset tokenization and ownership
+- **UMOJA Token**: Securities exposure , asset tokenization and ownership
 - **UMOJA Stable**: Liquidity layer for asset trading
 - **UMOJA Option**: Speculative growth mechanism for tokenized assets
 - **CULTURE Asset Token**: NFT-based cultural preservation with royalty sharing
@@ -85,13 +85,13 @@ HISA  introduces the **Adaptive Verification Layer (AVL)**, which combines:
 
 ### Multi-Channel Onboarding
 
-**Tier 1: Feature Phone Users (70% of target market)**
+**Tier 1: Feature Phone Users (25% of target market)**
 - USSD codes for account creation and activity reporting
 - SMS-based transaction confirmations
 - Voice-based verification in local languages
 - Offline value storage with periodic synchronization
 
-**Tier 2: Smartphone Users (25% of target market)**
+**Tier 2: Smartphone Users (70% of target market)**
 - Progressive Web App with offline capabilities
 - QR code-based verification and payments
 - Biometric authentication for security
@@ -177,9 +177,10 @@ HISA  introduces the **Adaptive Verification Layer (AVL)**, which combines:
 
 ## Conclusion
 
-HISA People Chain 2.0 represents a paradigm shift toward truly inclusive digital economies that prioritize resilience, community ownership, and sustainable impact. By combining cutting-edge technology with deep cultural understanding and robust risk management, HISA creates a foundation for Africa's digital future that no single point of failure can compromise.
+HISA People Chain  represents a paradigm shift toward truly inclusive digital economies that prioritize resilience, community ownership, and sustainable impact. By combining cutting-edge technology with deep cultural understanding and robust risk management, HISA creates a foundation for Africa's digital future that no single point of failure can compromise.
 
 The protocol's success lies not in its technological sophistication alone, but in its recognition that true digital transformation requires systems that work for everyone, everywhere, under any conditions. HISA  is not just building a blockchain—it's building the infrastructure for a more equitable digital world.
 
 
 *"Ubuntu meets blockchain: I am because we are, and we are because our systems are unbreakable."*
+
