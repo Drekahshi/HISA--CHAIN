@@ -560,7 +560,7 @@ The future of cultural preservation lies in community ownership, technological i
 
 **Storage**: Hybrid IPFS/Hedera architecture
 
-**API**: GraphQL with RESTful endpoints
+**API**:MCPS , GraphQL with RESTful endpoints
 
 **Security**: Multi-sig wallets, encrypted metadata for sensitive materials
 
@@ -573,5 +573,6 @@ The future of cultural preservation lies in community ownership, technological i
 *For technical documentation, partnership inquiries, or community participation opportunities, contact the CHAT development team.*
 
 © 2025 BANKAI LABS / HISA ECOSYSTEM. All rights reserved.
+
 
 
