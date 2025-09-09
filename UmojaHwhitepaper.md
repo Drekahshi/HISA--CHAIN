@@ -11,7 +11,7 @@ Kenya is caught in a **destructive cycle of financial exclusion** that keeps wea
 #### Stage 1: Systemic Financial Exclusion
 **The Reality:** 80% of Kenyans cannot access meaningful investment opportunities. High minimum thresholds for stocks (KSh 100,000+), bonds (KSh 50,000+), and real estate (millions) lock out ordinary citizens. Meanwhile, **trillions of shillings in rural land assets** sit idle, generating zero income for owners who cannot monetize their wealth.
 
-**The Problem:** When the majority cannot participate in wealth creation, economic growth becomes concentrated among the elite, creating a two-tier economy.
+**The Problem:** When the majority cannot participate in wealth creation, economic growth becomes concentrated among the few, creating a two-tier economy.
 
 #### Stage 2: Stunted Economic Performance
 **The Reality:** Without broad-based capital participation, Kenya's GDP growth stagnates below its potential. Youth unemployment exceeds 40% because small businesses cannot access capital markets to expand and create jobs. The economy operates at half-capacity.
