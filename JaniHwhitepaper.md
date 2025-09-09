@@ -73,9 +73,9 @@ Unique digital assets linked to conservation projects.
 
 Climate change is one of the most pressing challenges of our time, and addressing it requires more than just scientific solutions—it demands creativity, innovation, and community engagement. Art has the unique power to inspire, educate, and mobilize people in ways that data alone cannot. By blending artistic expression with cutting-edge technology, we can create new pathways for environmental advocacy and action.
 
-Our NFT project are rooted in this belief. Through digital art, we aim to raise awareness about the urgency of climate change and the importance of sustainable practices. Each NFT serves as a visual narrative, telling the story of our planet's fragile ecosystems and the need for collective action. By leveraging blockchain technology, we ensure transparency and traceability, allowing supporters to see the direct impact of their contributions.
+Our NFT project are rooted in this belief. Through digital art, we aim to raise awareness about the urgency of climate change and the importance of sustainable practices. Each NFT serves as a visual narrative, telling the story of our planet's fragile ecosystems and the need for collective action. By leveraging distributed ledger technology, we ensure transparency and traceability, allowing supporters to see the direct impact of their contributions.
 
-This ideology is incorporated in JANI Ecosystem, which uses blockchain to incentivize conservation and reforestation. Just as JANI Token connects environmental restoration with financial rewards, our NFTs bridge art and activism, offering a creative way to support climate action. Together, we can harness the power of art and technology to inspire a global movement towards a more sustainable future.
+This ideology is incorporated in JANI Ecosystem, which uses distributed ledger to incentivize conservation and reforestation. Just as JANI Token connects environmental restoration with financial rewards, our NFTs bridge art and activism, offering a creative way to support climate action. Together, we can harness the power of art and technology to inspire a global movement towards a more sustainable future.
 
 A conservation NFT will be minted after 100 Jani tokens are minted. Different wallet address that support Jani activities will be given a chance to mint an NFT but must stake Jani tokens. Artist, Generative AI and even photographers will be given a chance to be creative and mint a 1 of 1 NFT. NFT allotment will depend on different factors eg bidding through lock up staking for liquidity, Lottery, Jani proof of work metrics, social media voting, buying a slot, liquidity provision metric, donations etc. Depending on how the NFT allotment process the NFT it can be Stored in a vault, Kept by the owner, Redeemed by the NFT holder, Destroyed after tokenization, Used Separately from the NFT. Join us in this innovative journey, where creativity meets conservation, and every piece of art becomes a step towards healing our planet.
 
@@ -302,6 +302,27 @@ The **Proof of Growth (PoG)** consensus mechanism rewards nurseries based on the
 
 
 ### 3. Data Collection & Verification
+🔹 How it Works
+
+A validator sends a POST request:
+
+{
+  "treeId": "T1234",
+  "species": "Acacia",
+  "gps": [1.2921, 36.8219],
+  "plantedBy": "walletXYZ",
+  "validator": "Austin",
+  "status": "Growing"
+}
+
+
+Express hashes this record.
+
+MongoDB saves the full record + hash.
+
+Hedera stores the hash + validator info in the Consensus Service.
+
+Later, anyone can verify the record by recomputing the hash and comparing it with Hedera’s log.
 
 #### 3.1 Data Sources
 
@@ -805,7 +826,7 @@ A **flexible, community-driven technology stack** enabling rapid advancements.
 
 # Tera Farm Framework: Replanting Food Sovereignty Through Decentralization
 
-Tera Farm is a decentralized farming agency developed by Bankai Labs within the Jani Ecosystem, created to tackle the deeply rooted issues of food insecurity, rural poverty, and disconnected food systems. Born from the belief that food is not just a need but a right, Tera Farm bridges smallholder farmers to a digitized economy—one that is fair, transparent, and rooted in community.
+Terra Farm is a decentralized farming agency developed by Bankai Labs within the Hisa Ecosystem, created to tackle the deeply rooted issues of food insecurity, rural poverty, and disconnected food systems. Born from the belief that food is not just a need but a right, Tera Farm bridges smallholder farmers to a digitized economy—one that is fair, transparent, and rooted in community.Terra farm uses hedera distributed ledger in supply chain tracking to enable  users of products track the source of the food product being consumed . 
 
 We believe that with today's technological advancements, every person should access healthy, natural food. Our goal is to make this accessible, locally grown, and fairly priced food a daily reality. And at the heart of this transformation are the Terraform Units—living nodes in a decentralized network of farms powered by Hedera Hashgraph.
 
