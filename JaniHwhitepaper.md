@@ -66,7 +66,7 @@ Community participation through DAOs.
 Incentives for long-term holders.
 
 #### Carbon Offset Utility
-Tradable credits for corporate sustainability and work with  DOVU and Guardian. For a hectares of confirmed bamboo a unique NFT is minted that backs up Jani token to co2 offset activity in JANI ecosystem. This NFT will be a Co2 offset meme which will be burnt annually. It will serve as a measure for co2 offset in Jani ecosystem especially in the Jani token eg 1 Jani token is 10 kg of co2 offset annually and it will increase depending on co2 offset activities annually and growth of planted bamboo. Farmers will be paid in Jani token for their co2 offset activities. This will be a way of rewarding and unlock liquidity that lying idle utilizing blockchain technology.
+Tradable credits for corporate sustainability and work with  DOVU and Guardian. For a hectares of confirmed bamboo a unique NFT is minted that backs up Jani token to co2 offset activity in JANI ecosystem. This NFT will be a Co2 offset meme which will be burnt annually. It will serve as a measure for co2 offset in Jani ecosystem especially in the Jani token eg 1 Jani token is 10 kg of co2 offset annually and it will increase depending on co2 offset activities annually and growth of planted bamboo.A Farmers will be paid in Jani token for their co2 offset activities eg Jani Validators can tokenise his tea farm and from that he can earn some thing. This will be a way of rewarding and unlock liquidity that lying idle utilizing distributed ledger  technology.
 
 #### NFT-based Conservation Tracking
 Unique digital assets linked to conservation projects.
