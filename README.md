@@ -169,4 +169,4 @@ Not just a product—**a platform** for:
 - 🌍 **Real-World Results**  
 - 🕸️ **Network Effect**  
 - 🛠️ **Built for the Future**
-https://github.com/Drekahshi/HISA-PEOPLES-CHAIN.git
+  https://hisa-peoples-chain.vercel.app/
