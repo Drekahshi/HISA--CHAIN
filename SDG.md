@@ -8,9 +8,9 @@ HISA People Chain is a comprehensive blockchain ecosystem designed to address al
 ### 🌿 JANI HISA - Environmental Conservation Branch
 
 **SDG 2 - Zero Hunger**
-- Terra Farms Framework: Tokenized agricultural financing for farmers
-- Smart irrigation systems funded through blockchain rewards
-- Crop insurance via smart contracts
+- Terra Farms Framework: Tokenized agricultural financing for farmers to enable them improve the food security and increase production.
+- Smart irrigation systems funded through blockchain rewards and pools 
+- Crop insurance via smart contracts . 
 
 **SDG 5 - Gender Equality**
 - Women-led Community Forest Associations (CFAs)
@@ -294,4 +294,5 @@ Regulatory Compliance: Enterprise-grade governance structure aligned with global
 HISA People Chain represents a paradigm shift in sustainable development implementation, moving from traditional aid models to economically sustainable, blockchain-incentivized systems. By addressing all 17 SDGs through integrated environmental, financial, and cultural protocols, HISA creates a comprehensive framework for African development that is both technologically advanced and culturally appropriate.
 
 The ecosystem's success depends on community ownership, transparent governance, and measurable impact delivery. Through tokenized incentives, AI-powered optimization, and multi-stakeholder collaboration, HISA transforms sustainable development from a cost center into a profitable, scalable, and replicable model for global impact.
+
 
