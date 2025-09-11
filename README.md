@@ -15,7 +15,7 @@
 This isn't just crypto. **It's a people-powered digital economy** that works on **any device**, even basic feature phones.
 
 > **"HISA" means  Ownership**  in swahili
-> Giving Africans control over data, culture, and financial future.
+> Giving Africans control over data, culture, and financial future.We are  solving real  problems that real people suffer.
 
 ---
 
