@@ -1,7 +1,7 @@
 # HISA PEOPLES CHAIN  : A Holistic Vision for Africa's Digital Transformation
 
 ## The Big Picture: Ubuntu Meets Distributed Ledger Technology  .
-HISA PEOPLES CHAIN is a grassroots movement powered by a robust digital framework  bringing together everyday Africans, agentic AI, and  accesible enterprice grade distributed legder technology to solve SDGs through action, ownership, and reward. HISA seeks to solve real problems that real people suffer by enables users to earn value from real-world activities  like planting trees, caring for mental health, and preserving cultural knowledge using the power of agentic AI and smart contracts on Hedera.
+HISA PEOPLES CHAIN is a grassroots movement powered by a robust digital framework  bringing together everyday Africans, agentic AI, and  accesible enterprice grade distributed legder technology to solve SDGs through action, ownership, and reward by onboarding people from web2 to web3 . HISA seeks to solve real problems that real people suffer by enables users to earn value from real-world activities  like planting trees, caring for mental health, and preserving cultural knowledge using the power of agentic AI and smart contracts on Hedera.
 
 This is not just a crypto initiative—it's a people-powered digital economy that works on any device, including basic feature phones. The name "HISA" means ownership, and the goal is to give users ownership of their digital assets , data, culture, and future through inclusive, intelligent systems. By aligning human action with automated rewards, HISA turns SDG challenges into financial opportunity.
 
