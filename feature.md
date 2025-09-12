@@ -65,7 +65,7 @@ The app supports seamless wallet integrations with **HashPack** and **MetaMask**
 
 **MVP Implementation Steps:**
 
-- **Liquidity Pools:** Integrate with Hedera-native DEXs like HeliSwap or SaucerSwap for pooling, swapping, and yield farming. AI can query pool balances and suggest optimizations.
+- **Liquidity Pools:** Integrate with Hedera-native DEXs like HeliSwap, HSuite and  SaucerSwap for pooling, swapping, and yield farming. AI can query pool balances and suggest optimizations.
 - **Asset Tokenization as a Service (TaaS):** Tokenize RWAs (e.g., land, real estate, infrastructure bonds) using Hedera Token Service (HTS). Store documents/images on Kabila, with on-chain references.
 - **Triple-Token Model:** UMOT (governance/utility), UMOS (stablecoin backed by BTC, gold, bonds), UMOO (options/meme token). Enable fractional investments starting at KSh 100.
 - **Dynamic AI Features:** AI agents handle balance queries, automated swaps, sends/receives, and updates (e.g., rebalancing portfolios or yield optimization).
@@ -114,8 +114,8 @@ The app supports seamless wallet integrations with **HashPack** and **MetaMask**
 |----------------------------|----------------------------------|----------------------------------|
 | **Blockchain Network**    | Hedera Hashgraph (HBAR)         | Core consensus and transactions |
 | **Consensus Mechanism**   | Hedera Consensus Service (HCS)  | Immutable logging and timestamps |
-| **Tokenization**          | Hedera Token Service (HTS)      | NFTs, RWAs, and utility tokens  |
-| **Storage**               | Kabila (IPFS/Filecoin)          | Decentralized data/images/videos|
+| **Tokenization**          | Hedera Token Service (HTS)/HSuite      | NFTs, RWAs, and utility tokens  |
+| **Storage**               | Kabila / HCS          | Decentralized data/images/videos|
 | **DEX Integration**       | HeliSwap/SaucerSwap SDK         | Liquidity and swaps             |
 | **AI Frameworks**         | LangChain/AutoGen/Semantic Kernel| Agentic AI for queries/updates  |
 | **Wallets**               | HashPack/MetaMask               | Connectivity and balance management |
@@ -126,7 +126,7 @@ The app supports seamless wallet integrations with **HashPack** and **MetaMask**
 ## MVP Roadmap & Next Steps
 
 - **Phase 1 (Foundation):** Deploy core Hedera integrations, wallet connections, and Kabila storage (1-3 months).
-- **Phase 2 (Module Launch):** Roll out Jani, Hisa, Umoja, and Chat with AI features (4-6 months).
+- **Phase 2 (Module Launch):** Roll out Jani, Hisa, Umoja, and Chat with AI features .
 - **Phase 3 (Optimization):** Add advanced AI queries/updates and community governance (7-9 months).
 
 This MD file serves as an MVP blueprint for development. For implementation code, audits, or expansions, consult Hedera docs or reach out for custom support.
