@@ -35,7 +35,7 @@ This isn't just crypto. **It's a people-powered digital economy** that works on 
 
 ## 🧠 Technological Innovation: *Adaptive Verification Layer (AVL)*
 
-> [!INFO]  
+  
 > **AVL** combines multiple verification methods for both reliability and accessibility.
 
 - 🤖 AI-powered confirmations  
