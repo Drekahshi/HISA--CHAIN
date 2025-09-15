@@ -68,6 +68,19 @@ The app supports seamless wallet integrations with **HashPack** and **MetaMask**
 
 **Objective:** Incentivize and verify environmental conservation efforts like reforestation, carbon offsets, and sustainable land management using blockchain for transparency and rewards.
 
+Data Collection & Verification
+🔹 How it Works
+
+A validator sends a POST request:
+
+{ "treeId": "T1234", "species": "Acacia", "gps": [1.2921, 36.8219], "plantedBy": "walletXYZ", "validator": "Austin", "status": "Growing" }
+
+Express hashes this record.
+
+MongoDB saves the full record + hash.
+
+Hedera stores the hash + validator info in the Consensus Service
+
 **MVP Implementation Steps:**
 
 - **Hedera Guardian Integration:** Leverage Hedera Guardian for policy definition, verification of conservation claims (e.g., tree planting, CO2 sequestration), and issuance of verifiable credentials.
