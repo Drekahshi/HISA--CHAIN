@@ -105,7 +105,7 @@ Instead of the destructive crisis cycle, UMOJA creates a **transformative prospe
 | **Traditional Approach** | **UMOJA Approach** |
 |-------------------------|-------------------|
 | Buy BTC for KSh 100,000+ | Access diversified crypto/RWA portfolio for KSh 100 |
-| Single asset exposure | Diversified across BTC, gold, bonds, land, REITs |
+| Single asset exposure | Diversified across Bitcoin.ℏ, gold, bonds, land, REITs |
 | No passive income | Earn yield through staking, farming, options |
 | No governance rights | DAO voting on all major decisions |
 | High maintenance fees | Low fees with revenue sharing |
@@ -137,7 +137,7 @@ The statistics are sobering. When citizens store their wealth in Kenyan shilling
 ### The Multi-Asset Backing Revolution
 
 UMOJA's triple-token ecosystem represents a paradigm shift in how we conceptualize store of value. Unlike single-asset approaches, UMOJA's **UMOS stablecoin** is strategically backed by:
-- **10% Bitcoin** - providing digital gold exposure and inflation hedge
+- **10% Bitcoin.ℏ** - providing digital gold exposure and inflation hedge
 - **20% Gold** - offering time-tested store of value stability
 - **40% HBAR-backed USDC** - ensuring liquidity and stability
 - **30% Kenyan infrastructure bonds** - maintaining local economic connection
