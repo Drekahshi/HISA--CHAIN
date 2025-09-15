@@ -6,7 +6,7 @@
 
 ## 🌐 The Big Picture: *Ubuntu Meets Distributed Ledger Technology*
 
-> HISA PEOPLES CHAIN is a **grassroots movement** powered by a robust digital framework—connecting everyday Africans, **agentic AI**, and **blockchain** to address the 17 SDGs through **action, ownership, and reward**.
+> HISA PEOPLES CHAIN is a **grassroots movement** powered by a robust digital framework—connecting everyday Africans, **agentic AI**, and **blockchain** to address the 17 SDGs through **action, ownership, and reward with focus on sustanability finance for prosperity for all**.
 
 - 🌳 *conservation database*
 - 🧠 *Telemedicine and economic inclusion and empowerment*
