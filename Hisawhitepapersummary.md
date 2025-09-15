@@ -79,9 +79,9 @@ This diversified approach prevents the economic volatility that often plagues si
 
 Perhaps HISA's most revolutionary aspect is its commitment to universal accessibility. The platform operates across three tiers:
 
-**Feature Phone Integration (25% of users)**: USSD codes, SMS verification, and voice interfaces ensure that even basic phones can participate in the digital economy. This isn't a compromise—it's a recognition that true inclusion means working with existing infrastructure rather than requiring expensive upgrades.
+**Feature Phone Integration (70% of users)**: USSD codes, SMS verification, and voice interfaces ensure that even basic phones can participate in the digital economy. This isn't a compromise—it's a recognition that true inclusion means working with existing infrastructure rather than requiring expensive upgrades.
 
-**Smartphone Optimization (70% of users)**: Progressive web apps with offline capabilities provide enhanced features while maintaining the core accessibility principles.
+**Smartphone Optimization (25% of users)**: Progressive web apps with offline capabilities provide enhanced features while maintaining the core accessibility principles.
 
 **Community Hub Network (5% of users)**: Solar-powered verification stations serve as local anchors for the network, providing education, exchange services, and technical support.
 
