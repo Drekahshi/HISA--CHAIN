@@ -1,0 +1,157 @@
+/* src/styles/festive.css */
+:root {
+  --festive-orange: #FF6B35;
+  --celebration-gold: #FFD23F;
+  --forest-green: #4CAF50;
+  --earth-brown: #8D4004;
+  --royal-purple: #7B2CBF;
+  --sunset-pink: #E63946;
+  --bright-cyan: #06FFA5;
+  --warm-yellow: #FFBE0B;
+  --dark-bg: #1a1a2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #16213e 100%);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.festive-container {
+  background: rgba(26, 26, 46, 0.9);
+  border-radius: 20px;
+  border: 2px solid var(--celebration-gold);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  padding: 2rem;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.festive-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,
+    var(--festive-orange),
+    var(--celebration-gold),
+    var(--bright-cyan),
+    var(--sunset-pink)
+  );
+}
+
+.festive-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.festive-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg,
+    var(--festive-orange),
+    var(--celebration-gold),
+    var(--bright-cyan)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+}
+
+.festive-subtitle {
+  color: var(--celebration-gold);
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.celebration-button {
+  background: linear-gradient(45deg, var(--festive-orange), var(--sunset-pink));
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.celebration-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
+}
+
+.celebration-button:active {
+  transform: translateY(0);
+}
+
+.token-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid rgba(255, 215, 63, 0.3);
+  transition: all 0.3s ease;
+}
+
+.token-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 215, 63, 0.2);
+  border-color: var(--celebration-gold);
+}
+
+.african-pattern-bg {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 107, 53, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 80% 70%, rgba(255, 215, 63, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 40% 80%, rgba(6, 255, 165, 0.1) 0%, transparent 20%);
+}
+
+/* Module specific colors */
+.jani-theme {
+  border-color: var(--forest-green);
+}
+
+.jani-theme .festive-title {
+  background: linear-gradient(45deg, var(--forest-green), var(--bright-cyan));
+}
+
+.hisa-theme {
+  border-color: var(--royal-purple);
+}
+
+.hisa-theme .festive-title {
+  background: linear-gradient(45deg, var(--royal-purple), var(--sunset-pink));
+}
+
+.umoja-theme {
+  border-color: var(--celebration-gold);
+}
+
+.umoja-theme .festive-title {
+  background: linear-gradient(45deg, var(--celebration-gold), var(--festive-orange));
+}
+
+.chat-theme {
+  border-color: var(--bright-cyan);
+}
+
+.chat-theme .festive-title {
+  background: linear-gradient(45deg, var(--bright-cyan), var(--royal-purple));
+}
