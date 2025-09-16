@@ -71,11 +71,11 @@ This isn't just crypto. **It's a people-powered digital economy** that works on 
 > [!NOTE]  
 > 🌍 HISA serves **100% of Africa**, regardless of device type.
 
-- 📱 **Feature Phones ()**  
+- 📱 **Feature Phones ( 70%)**  
   - USSD codes, SMS, voice interface  
-- 🤳 **Smartphones (%)**  
+- 🤳 **Smartphones (25%)**  
   - Progressive web apps, offline-first  
-- 🏘️ **Community Hubs (%)**  
+- 🏘️ **Community Hubs (5%)**  
   - Solar-powered local stations for education, verification, and trade
 
 ---
