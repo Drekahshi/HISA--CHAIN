@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Trees, Heart, Coins, MessageCircle } from 'lucide-react';
 import WalletConnect from './components/Wallet/WalletConnect';
 import TreePlanting from './components/Jani/TreePlanting';
+import UmojaDashboard from './components/Umoja/UmojaDashboard';
 import { CelebrationService } from './services/celebration';
 import './styles/festive.css';
 import './styles/animations.css';
@@ -45,17 +46,7 @@ function App() {
           </div>
         );
       case 'umoja':
-        return (
-          <div className="festive-container umoja-theme">
-            <div className="festive-header">
-              <h2 className="festive-title">💰 Umoja - Community Finance</h2>
-              <p className="festive-subtitle">Asset tokenization and decentralized finance</p>
-            </div>
-            <div style={{ padding: '2rem', textAlign: 'center' }}>
-              <p>Finance module coming soon! Connect your wallet to get started.</p>
-            </div>
-          </div>
-        );
+        return <UmojaDashboard />;
       case 'chat':
         return (
           <div className="festive-container chat-theme">

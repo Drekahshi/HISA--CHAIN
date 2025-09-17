@@ -13,6 +13,7 @@
     "chart.js": "^4.4.0",
     "confetti-js": "^0.0.18",
     "crypto-js": "^4.2.0",
+    "ethers": "^6.15.0",
     "framer-motion": "^10.16.4",
     "hashconnect": "^0.2.9",
     "lucide-react": "^0.263.1",
@@ -22,6 +23,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",
-    "vite": "^4.5.14"
+    "vite": "^4.4.5"
   }
 }

@@ -2,7 +2,10 @@ import {
   Client,
   TopicCreateTransaction,
   TopicMessageSubmitTransaction,
-  TransactionReceiptQuery
+  TransactionReceiptQuery,
+  ContractExecuteTransaction,
+  ContractFunctionParameters,
+  TokenApproveTransaction
 } from "@hashgraph/sdk";
 
 class HederaService {
@@ -50,26 +53,82 @@ class HederaService {
     }
   }
 
-  // NOTE: This method will not work without an operator
-  // To get a receipt, the query must be paid for. This would need to be done
-  // either on a backend or by the user signing the query.
-  // For now, we will rely on the wallet response for success/failure.
-  async getTransactionReceipt(transactionId) {
+  async getTransactionRecord(transactionId) {
+    const mirrorNodeUrl = `https://testnet.mirrornode.hedera.com/api/v1/transactions/${transactionId}`;
     try {
-      const receiptQuery = new TransactionReceiptQuery()
-        .setTransactionId(transactionId);
-
-      const receipt = await receiptQuery.execute(this.client);
-      return receipt;
+      const response = await fetch(mirrorNodeUrl);
+      if (response.status === 404) {
+        // Not found yet, this is expected for recent transactions
+        return null;
+      }
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      // Assuming the first transaction in the response is the one we want
+      return data.transactions[0];
     } catch (error) {
-      console.error("Error getting transaction receipt:", error);
-      throw error;
+      console.error(`Error fetching transaction record for ${transactionId}:`, error);
+      // Don't re-throw, as we want to retry
+      return null;
     }
   }
 
   getHashScanUrl(transactionId, isMainnet = false) {
     const network = isMainnet ? "mainnet" : "testnet";
     return `https://hashscan.io/${network}/transaction/${transactionId}`;
+  }
+
+  async getSaucerSwapPools() {
+    try {
+      const response = await fetch('https://test-api.saucerswap.finance/pools', {
+        headers: {
+          'x-api-key': '875e1017-87b8-4b12-8301-6aa1f1aa073b'
+        }
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      console.error("Error fetching SaucerSwap pools:", error);
+      throw error;
+    }
+  }
+
+  createSwapTransaction(routerContractId, amountIn, amountOutMin, path, toAddress, deadline) {
+    try {
+      const gasLimit = 240000; // As recommended by SaucerSwap docs
+
+      const params = new ContractFunctionParameters()
+        .addUint256(amountIn)
+        .addUint256(amountOutMin)
+        .addAddressArray(path)
+        .addAddress(toAddress)
+        .addUint256(deadline);
+
+      const transaction = new ContractExecuteTransaction()
+        .setContractId(routerContractId)
+        .setGas(gasLimit)
+        .setFunction("swapExactTokensForTokens", params);
+
+      return transaction.freezeWith(this.client);
+    } catch (error) {
+      console.error("Error creating swap transaction:", error);
+      throw error;
+    }
+  }
+
+  createTokenApprovalTransaction(tokenId, spenderAccountId, amount) {
+    try {
+      const transaction = new TokenApproveTransaction()
+        .addTokenApproval(tokenId, spenderAccountId, amount);
+
+      return transaction.freezeWith(this.client);
+    } catch (error) {
+      console.error("Error creating token approval transaction:", error);
+      throw error;
+    }
   }
 }
 

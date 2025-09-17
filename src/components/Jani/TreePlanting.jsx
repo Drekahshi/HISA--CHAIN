@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { TreePine, MapPin, Zap, ExternalLink } from 'lucide-react';
+import { TreePine, MapPin, Zap, ExternalLink, Loader2 } from 'lucide-react';
 import SHA256 from 'crypto-js/sha256';
 import { hederaService } from '../../services/hedera';
 import { hashConnectService } from '../../services/hashconnect';
 import { CelebrationService } from '../../services/celebration';
+
+// Helper function to pause execution
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const TreePlanting = () => {
   const [trees, setTrees] = useState([]);
@@ -12,33 +15,44 @@ const TreePlanting = () => {
   const [janiTopicId, setJaniTopicId] = useState(hederaService.topicIds.JANI);
   const [transactionHistory, setTransactionHistory] = useState([]);
 
-  const mockTrees = [
-    { id: 1, species: 'Mukuyu (Fig)', location: 'Oloolua Forest', gps: '-1.3733, 36.7425', age: '2 years', health: 'Excellent' },
-    { id: 2, species: 'Mugumo (Sacred Fig)', location: 'Oloolua Forest', gps: '-1.3728, 36.7419', age: '5 years', health: 'Good' },
-    { id: 3, species: 'Cedar', location: 'Oloolua Forest', gps: '-1.3741, 36.7432', age: '1 year', health: 'Growing' },
-    { id: 4, species: 'Bamboo', location: 'Oloolua Forest', gps: '-1.3730, 36.7405', age: '6 months', health: 'Excellent' },
-  ];
-
   useEffect(() => {
+    // This is just for displaying some mock data, not used in the transaction logic
+    const mockTrees = [
+      { id: 1, species: 'Mukuyu (Fig)', location: 'Oloolua Forest', gps: '-1.3733, 36.7425', age: '2 years', health: 'Excellent' },
+      { id: 2, species: 'Mugumo (Sacred Fig)', location: 'Oloolua Forest', gps: '-1.3728, 36.7419', age: '5 years', health: 'Good' },
+    ];
     setTrees(mockTrees);
   }, []);
 
   const createJaniTopic = async () => {
     setStatusMessage('Creating Jani HCS topic...');
     const accountId = hashConnectService.getAccountId();
-    const createTopicTx = await hederaService.createTopicTransaction();
+    const createTopicTx = hederaService.createTopicTransaction();
     const txBytes = createTopicTx.toBytes();
 
     const response = await hashConnectService.sendTransaction(txBytes, accountId);
+    const transactionId = response.transactionId.toString();
 
-    if (response.receipt) {
-      const newTopicId = response.receipt.topicId.toString();
+    setStatusMessage(`Topic creation submitted (Tx: ${transactionId.substring(0, 10)}...). Waiting for receipt...`);
+
+    // Poll mirror node for the record
+    let record = null;
+    for (let i = 0; i < 10; i++) { // Poll for a max of ~30 seconds
+      record = await hederaService.getTransactionRecord(transactionId);
+      if (record && record.receipt && record.receipt.topic_id) {
+        break;
+      }
+      await sleep(3000);
+    }
+
+    if (record && record.receipt && record.receipt.topic_id) {
+      const newTopicId = record.receipt.topic_id;
       hederaService.topicIds.JANI = newTopicId;
       setJaniTopicId(newTopicId);
       setStatusMessage(`Jani topic created: ${newTopicId}`);
       return newTopicId;
     } else {
-      throw new Error("Failed to get topic creation receipt");
+      throw new Error("Could not retrieve topic creation receipt from mirror node.");
     }
   };
 
@@ -57,36 +71,32 @@ const TreePlanting = () => {
         currentTopicId = await createJaniTopic();
       }
 
-      // 1. Construct the tree data record
       const treeRecord = {
         treeId: `T${Date.now()}`,
         species: 'Mukuyu (Fig)',
         gps: [-1.3733, 36.7425],
         plantedBy: hashConnectService.getAccountId(),
-        validator: "HISA_APP_VALIDATOR", // As per user spec
+        validator: "HISA_APP_VALIDATOR",
         status: "Growing",
         timestamp: new Date().toISOString(),
       };
 
-      // 2. Hash the record
       const recordString = JSON.stringify(treeRecord);
       const recordHash = SHA256(recordString).toString();
       setStatusMessage(`Record hash generated: ${recordHash.substring(0, 10)}...`);
 
-      // 3. Build and send the HCS transaction
       const accountId = hashConnectService.getAccountId();
-      const submitMessageTx = await hederaService.submitTopicMessageTransaction(currentTopicId, recordHash);
+      const submitMessageTx = hederaService.submitTopicMessageTransaction(currentTopicId, recordHash);
       const txBytes = submitMessageTx.toBytes();
 
       setStatusMessage('Please sign the transaction in your wallet...');
       const response = await hashConnectService.sendTransaction(txBytes, accountId);
 
-      // 4. Update history and celebrate
       const transactionId = response.transactionId.toString();
       const newTransaction = {
         id: transactionId,
         type: 'Tree Planted (HCS)',
-        status: 'Completed',
+        status: 'Submitted',
         hash: recordHash,
         data: recordString,
         transactionId,
@@ -107,10 +117,6 @@ const TreePlanting = () => {
     }
   };
 
-  const viewOnHashScan = (transactionId) => {
-    window.open(hederaService.getHashScanUrl(transactionId), '_blank');
-  };
-
   return (
     <div className="festive-container jani-theme">
       <div className="festive-header">
@@ -129,12 +135,8 @@ const TreePlanting = () => {
             background: 'linear-gradient(45deg, var(--forest-green), var(--bright-cyan))'
           }}
         >
-          {planting ? 'Processing...' : (
-            <>
-              <TreePine size={24} style={{ marginRight: '10px' }} />
-              Plant a Tree & Record on Hedera
-            </>
-          )}
+          {planting ? <Loader2 className="animate-spin" /> : <TreePine size={24} style={{ marginRight: '10px' }} />}
+          {planting ? 'Processing...' : 'Plant a Tree & Record on Hedera'}
         </button>
         {statusMessage && <p style={{ marginTop: '1rem', color: 'var(--bright-cyan)' }}>{statusMessage}</p>}
         {!janiTopicId && <p style={{ marginTop: '0.5rem', fontSize: '0.9rem', opacity: 0.8 }}>Note: A new HCS topic will be created on the first transaction.</p>}
@@ -148,13 +150,9 @@ const TreePlanting = () => {
               <div key={tx.id} className="token-card">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                   <h4 style={{ color: 'var(--bright-cyan)' }}>{tx.type}</h4>
-                  <button
-                    onClick={() => viewOnHashScan(tx.transactionId)}
-                    className="celebration-button"
-                    style={{ padding: '8px 12px', fontSize: '0.8rem' }}
-                  >
+                  <a href={hederaService.getHashScanUrl(tx.transactionId)} target="_blank" rel="noopener noreferrer" className="celebration-button" style={{ padding: '8px 12px', fontSize: '0.8rem' }}>
                     <ExternalLink size={14} /> View on HashScan
-                  </button>
+                  </a>
                 </div>
                 <div style={{ fontSize: '0.8rem', wordBreak: 'break-all', background: 'rgba(0,0,0,0.2)', padding: '0.5rem', borderRadius: '5px' }}>
                   <p><strong>Transaction ID:</strong> {tx.transactionId}</p>
