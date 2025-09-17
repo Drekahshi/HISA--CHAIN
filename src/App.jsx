@@ -3,6 +3,7 @@ import { Trees, Heart, Coins, MessageCircle } from 'lucide-react';
 import WalletConnect from './components/Wallet/WalletConnect';
 import TreePlanting from './components/Jani/TreePlanting';
 import UmojaDashboard from './components/Umoja/UmojaDashboard';
+import ChatDashboard from './components/Chat/ChatDashboard';
 import { CelebrationService } from './services/celebration';
 import './styles/festive.css';
 import './styles/animations.css';
@@ -48,17 +49,7 @@ function App() {
       case 'umoja':
         return <UmojaDashboard />;
       case 'chat':
-        return (
-          <div className="festive-container chat-theme">
-            <div className="festive-header">
-              <h2 className="festive-title">🎨 Chat - Cultural Heritage</h2>
-              <p className="festive-subtitle">Preserve and monetize cultural assets</p>
-            </div>
-            <div style={{ padding: '2rem', textAlign: 'center' }}>
-              <p>Culture module coming soon! Connect your wallet to get started.</p>
-            </div>
-          </div>
-        );
+        return <ChatDashboard />;
       default:
         return <WalletConnect />;
     }

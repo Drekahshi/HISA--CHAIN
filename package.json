@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hashgraph/sdk": "^2.19.1",
+    "@hashgraph/sdk": "^2.72.0",
     "chart.js": "^4.4.0",
     "confetti-js": "^0.0.18",
     "crypto-js": "^4.2.0",

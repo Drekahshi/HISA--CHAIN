@@ -11,6 +11,7 @@ class HashConnectService {
     this.connectedAccount = null;
     this.topic = null;
     this.pairingData = null;
+    this.publicKey = null;
   }
 
   async initialize() {
@@ -25,7 +26,16 @@ class HashConnectService {
       this.hashconnect.pairingEvent.on((data) => {
         console.log("Paired with wallet", data);
         this.pairingData = data;
+        // Assuming the first paired account is the one we want to use.
         this.connectedAccount = data.accountIds[0];
+
+        // Correctly capture the public key from the pairing data.
+        // The `hashconnect` library provides this in the `pairingData` object.
+        // We'll find the public key associated with the connected account.
+        const accountData = data.accountData.find(acc => acc.account === this.connectedAccount);
+        if (accountData && accountData.publicKey) {
+          this.publicKey = accountData.publicKey;
+        }
       });
 
       return initData;
@@ -62,6 +72,10 @@ class HashConnectService {
         this.hashconnect.pairingEvent.once((data) => {
           this.pairingData = data;
           this.connectedAccount = data.accountIds[0];
+          const accountData = data.accountData.find(acc => acc.account === this.connectedAccount);
+          if (accountData && accountData.publicKey) {
+            this.publicKey = accountData.publicKey;
+          }
           resolve(this.connectedAccount);
         });
 
@@ -103,6 +117,10 @@ class HashConnectService {
 
   getAccountId() {
     return this.connectedAccount;
+  }
+
+  getPublicKey() {
+    return this.publicKey;
   }
 
   isConnected() {
