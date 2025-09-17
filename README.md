@@ -128,12 +128,31 @@ HISA positions itself as a **continental blueprint**, bridging finance and susta
 🎨 Cultural preservation becomes a **livelihood**, not just legacy.
 
 ---
+## Governance: Blending Tech + Tradition
 
-## ⚖️ Governance: *Blending Tech + Tradition*
+Our governance model fuses cutting-edge blockchain mechanics with time-tested African traditions of consensus-building.
 
-- 🛡️ Multi-sig + community voting for updates  
-- 🧓 Elder councils for cultural decisions  
-- 🗳️ Hybrid governance = balance of innovation and integrity
+- 🛡️ **Multi-Sig + Community Voting**  
+  Protocol upgrades and treasury decisions require both validator consensus (multi-sig) and open community voting. This prevents unilateral control while encouraging transparency.
+
+- 🧓 **Elder Councils for Cultural Stewardship**  
+  Inspired by traditional African councils of elders, cultural and ethical questions are resolved by respected community representatives. This preserves heritage while ensuring trust in social decisions.
+
+- 🗳️ **Hybrid Governance = Innovation + Integrity**  
+  The system balances the speed and efficiency of decentralized tech with the wisdom and legitimacy of tradition. This “two-legged” model protects against capture while grounding the ecosystem in African identity.
+
+---
+
+## 🌐 The W.L. Gore Lattice Model in HISA
+
+We adapt the **W.L. Gore lattice model**—a flat, non-hierarchical system where leadership emerges from expertise—for decentralized governance in the HISA ecosystem.
+
+- **No Central Bosses**: Validators self-organize around initiatives, much like Gore’s associates rally around projects.  
+- **Peer Accountability**: Influence comes from contribution and reliability, not titles.  
+- **Dynamic Leadership**: For each decision—whether in **Umoja (prosperity + inflation solutions)**, **JANI (conservation validators)**, or **CHAT (cultural heritage)**—leaders emerge naturally from the most engaged and knowledgeable validators.  
+- **Collaboration at Scale**: Just as Gore fostered innovation without rigid hierarchies, HISA ensures validators and communities can innovate across Africa’s most urgent challenges without bottlenecks.  
+
+👉 By merging the **lattice model** with **African consensus traditions**, HISA’s DAO achieves both **scalability** and **authenticity**: a validator ecosystem that grows with innovation while staying rooted in community trust.
 
 ---
 
