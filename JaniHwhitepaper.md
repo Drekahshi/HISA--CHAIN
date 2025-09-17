@@ -120,6 +120,49 @@ The rest of the transaction fees will be used in the network system infrastructu
 ## 4. Governance & Decentralization
 
 ### 4.1 DAO Structure
+# JANI Ecosystem DAO Governance Model
+
+## Overview
+The JANI ecosystem integrates the principles of the **W.L. Gore lattice model** into a decentralized governance structure. This ensures transparency, inclusivity, and adaptability while empowering validators and local communities.
+
+---
+
+## Local Validator DAO (L-DAO)
+
+**Purpose**: Empower local communities—such as Community Forest Associations (CFAs), youth groups, and women’s chamas—to lead conservation efforts.
+
+**Key Features**:
+- **Peer Accountability**: Leadership emerges from expertise and contribution, not hierarchy.  
+- **Rotating Leadership**: Roles shift dynamically based on project needs.  
+- **Community Verification**: Validators verify conservation activities like tree planting and sustainable land management.  
+- **Incentive Structure**: Validators earn staking rewards, governance rights, and recognition for active participation.  
+
+---
+
+## Global Validator DAO (G-DAO)
+
+**Purpose**: Provide transparency, strategic oversight, and sustainability at a continental and global scale.
+
+**Key Features**:
+- **Decentralized Oversight**: Composed of regional reps, NGOs, corporate partners, and scientific experts.  
+- **Quadratic Voting**: Prevents dominance by large stakeholders, ensuring fair decision-making.  
+- **Specialized Committees**: Technical, financial, and conservation oversight committees align activities with JANI’s mission.  
+
+---
+
+## Incentives and Rewards
+- **Reputation-Based Rewards**: Rewards tied to contribution, accuracy, and long-term commitment.  
+- **Staking Returns**: Both L-DAO and G-DAO validators earn yields while securing the ecosystem.  
+- **Governance Participation**: Voting rights ensure validators have a direct say in ecosystem direction.  
+
+---
+
+## Benefits of the Lattice DAO Model
+- **Flexibility**: Adaptive, non-hierarchical structure inspired by W.L. Gore’s model.  
+- **Inclusivity**: Local voices and global expertise co-exist in decision-making.  
+- **Transparency**: Blockchain ensures all actions are traceable, verifiable, and fair.  
+
+---
 
 #### Local DAO (L-DAO)
 Oversees CFA conservation efforts.
