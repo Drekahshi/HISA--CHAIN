@@ -1,4 +1,4 @@
-
+https://hisa-peoples-chain.vercel.app/
 # 🌍 HISA PEOPLES CHAIN  
 ## *A Holistic Vision for Africa's Digital Transformation*
 
@@ -224,7 +224,7 @@ Not just a product—**a platform** for:
 - 🌍 **Real-World Results**  
 - 🕸️ **Network Effect**  
 - 🛠️ **Built for the Future**
-  https://hisa-peoples-chain.vercel.app/
+
   
    
    PLAYGROUND HASHSCAN 
