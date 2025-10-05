@@ -1,26 +1,37 @@
 {
-  "name": "hisa-mvp",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "jani-backend",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "test": "jest"
   },
   "dependencies": {
-    "@hashgraph/sdk": "^2.19.1",
-    "chart.js": "^4.4.0",
-    "confetti-js": "^0.0.18",
-    "framer-motion": "^10.16.4",
-    "hashconnect": "^0.2.9",
-    "lucide-react": "^0.263.1",
-    "react": "^18.2.0",
-    "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.2.0"
+    "@hashgraph/sdk": "^2.40.0",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "bull": "^4.12.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "ipfs-http-client": "^60.0.1",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "redis": "^4.6.0",
+    "winston": "^3.11.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.3",
-    "vite": "^4.5.14"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20.10.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
   }
 }
