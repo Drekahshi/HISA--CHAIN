@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const tree_controller_1 = require("../controllers/tree.controller");
+const auth_middleware_1 = require("../middlewares/auth.middleware");
+const router = (0, express_1.Router)();
+const treeController = new tree_controller_1.TreeController();
+router.post('/register', auth_middleware_1.authenticateToken, (0, auth_middleware_1.authorizeRoles)('planter', 'validator', 'admin'), (req, res) => treeController.registerTree(req, res));
+router.get('/', auth_middleware_1.authenticateToken, (req, res) => treeController.getTrees(req, res));
+router.get('/:id', auth_middleware_1.authenticateToken, (req, res) => treeController.getTreeById(req, res));
+router.put('/:id/measurement', auth_middleware_1.authenticateToken, (0, auth_middleware_1.authorizeRoles)('validator', 'admin'), (req, res) => treeController.updateMeasurement(req, res));
+exports.default = router;
