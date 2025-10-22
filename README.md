@@ -114,6 +114,27 @@ HISA positions itself as a **continental blueprint**, bridging finance and susta
 - 🏘️ **Community Hubs (5%)**  
   - Solar-powered local stations for education, verification, and trade
 
+
+  | # | SDG Impact Metric | Blockchain Operation | Verification Method |
+|---|---|---|---|
+| 1 | Poverty Reduction | Direct token payments | Smart contract payment records |
+| 2 | Food Security | Harvest tokenization | Supply chain tracking via HCS |
+| 3 | Health Outcomes | Wellness tracking | Privacy-preserving ZK-proofs |
+| 4 | Education Access | Cultural/financial literacy NFT credentials | NFT credential completion |
+| 5 | Gender Equality | Women participation tracking | DAO voting records |
+| 6 | Water Efficiency | IoT monitoring | Sensor data on Hedera |
+| 7 | Clean Energy | Research funding distribution | Smart contract milestones |
+| 8 | Employment | Job creation tracking | Token compensation records |
+| 9 | Innovation | Technology deployment | API integration logs |
+| 10 | Inequality Reduction | Quadratic voting | Smart contract voting patterns |
+| 11 | Community Development | DAO project funding | Treasury allocation records |
+| 12 | Responsible Production | Supply chain transparency | Immutable provenance records |
+| 13 | Climate Action | Carbon credit management | Tree survival verification |
+| 14 | Ocean Preservation | Research funding distribution | Academic grant disbursement |
+| 15 | Biodiversity | Species tracking | Satellite + AI verification |
+| 16 | Justice & Institutions | Governance transparency | Public DAO records |
+| 17 | Partnerships | Cross-ecosystem coordination | Inter-DAO collaboration logs |
+
 ---
 
 ## 🎭 Culture as Capital: *Preserving and Valuing African Heritage*
