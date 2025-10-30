@@ -1,5 +1,4 @@
 
-THIS REPO CONTAINS HISA DOCUMENTATION .  YOU CAN CLONE THIS REPO IF YOU WANT TO RUN LOCALLY . IT ENTAILS ALL INSTRUCTIONS : https://github.com/Drekahshi/HISA.git
 
 https://hisa-chain-dapp.vercel.app/
 # 🌍 HISA PEOPLES CHAIN  
