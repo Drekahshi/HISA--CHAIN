@@ -246,9 +246,13 @@ Not just a product—**a platform** for:
 - 🕸️ **Network Effect**  
 - 🛠️ **Built for the Future**
 
+TO run the code locally access this repo : https://github.com/Drekahshi/HISA.git
   
    
    PLAYGROUND HASHSCAN 
-   https://hashscan.io/testnet/tx/0.0.5834488@1758652098.620359398
+  
+  https://hashscan.io/testnet/tx/0.0.5834488@1758652098.620359398
+
 https://hashscan.io/testnet/tx/0.0.5834488@1758652465.670977663
+
 https://hashscan.io/testnet/tx/0.0.5834488@1758653002.957571470
