@@ -1,4 +1,4 @@
-https://hisa-peoples-chain.vercel.app/
+https://hisa-chain-dapp.vercel.app/
 # 🌍 HISA PEOPLES CHAIN  
 ## *A Holistic Vision for Africa's Digital Transformation*
 
