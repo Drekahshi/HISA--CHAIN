@@ -246,7 +246,69 @@ Not just a product—**a platform** for:
 - 🕸️ **Network Effect**  
 - 🛠️ **Built for the Future**
 
-TO run the code locally access this repo : https://github.com/Drekahshi/HISA.git
+FOR THE HACKERTHON JUDGES
+
+
+TO run the HISA  locally access this repo : https://github.com/Drekahshi/HISA.git
+
+
+HEDERA CERTIFICATE
+
+https://drive.google.com/file/d/13NrylC8LZvqRn96gZr6_ZexrRvsrNybf/view?usp=drive_link
+
+https://drive.google.com/file/d/1TzfY1nPsi-C24rHZ0NHBgQw70ENBLcNi/view?usp=drive_link
+
+HISA VIDEO OVERVIEW https://youtu.be/kN2nSgrrizw
+
+PITCHDECK
+
+https://docs.google.com/presentation/d/1TidkZG446BMWM1dlU6WztahOgg4EyOHUp29-7ruhRA4/edit?usp=drivesdk
+
+TO RUN THE CODE LOCALLY GO TO THIS REPO and CLONE . IT ENTAILS ALL INSTRUCTIONS : https://github.com/Drekahshi/HISA.git
+
+## Hashscan Playgroundcode
+
+JANI https://hashscan.io/testnet/transaction/0.0.5834216@1761574531.567298094
+
+jani token id : 0.0.7145233
+
+UMOJA TOKEN  https://hashscan.io/testnet/transaction/0.0.5834216@1761575113.660684650
+
+umoja token  id : 0.0.7145267
+
+CHAT TOKEN :
+
+https://hashscan.io/testnet/transaction/0.0.5834216@1761575620.664898314
+
+CHAT  : 0.0.7145306
+
+HISA TOKEN  : https://hashscan.io/testnet/transaction/0.0.5834216@1761575952.490703591
+
+HISA  : 0.0.7145322
+
+Proof Of Growth with HCS
+
+https://hashscan.io/testnet/account/0.0.5834216
+
+https://hashscan.io/testnet/topic/0.0.7145347
+
+https://hashscan.io/testnet/token/0.0.7145346
+
+UMOJA
+
+https://hashscan.io/testnet/token/0.0.7145444
+
+https://hashscan.io/testnet/token/0.0.7145445
+
+https://hashscan.io/testnet/token/0.0.7145446
+
+HEDERA EXPLORER LINKS:
+
+Governance Topic: https://hashscan.io/testnet/topic/0.0.7145447
+
+UCSE Topic:       https://hashscan.io/testnet/topic/0.0.7145448
+
+Account:          https://hashscan.io/testnet/account/0.0.5834216
   
    
    PLAYGROUND HASHSCAN 
