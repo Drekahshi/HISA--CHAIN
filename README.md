@@ -264,6 +264,8 @@ PITCHDECK
 
 https://docs.google.com/presentation/d/1TidkZG446BMWM1dlU6WztahOgg4EyOHUp29-7ruhRA4/edit?usp=drivesdk
 
+
+
 TO RUN THE CODE LOCALLY GO TO THIS REPO and CLONE . IT ENTAILS ALL INSTRUCTIONS : https://github.com/Drekahshi/HISA.git
 
 ## Hashscan Playgroundcode
