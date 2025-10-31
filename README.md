@@ -344,7 +344,7 @@ Follow these steps to clone, set up, and run the project locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Drekahshi/HISA.git
+   git clone https://github.com/Drekahshi/HISA--CHAIN.git
    cd HISA
    ```
 
