@@ -328,7 +328,7 @@ https://hashscan.io/testnet/tx/0.0.5834488@1758653002.957571470
 
 This repository contains the code for the HISA platform. Below are instructions to set it up and run locally for testing or judging.
 
-## Prerequisites
+## Prerequisites https://hisa-chain-dapp.vercel.app/
 
 - [Node.js](https://nodejs.org/) (version 14.0.0 or higher)
 - [npm](https://www.npmjs.com/) (comes with Node.js; version 6.0.0 or higher recommended)
