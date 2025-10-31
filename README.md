@@ -250,8 +250,9 @@ Not just a product—**a platform** for:
 
 FOR THE HACKERTHON JUDGES
 
+This repo has several branches the main has md files about the project the other branches are features that are to be implemented in due time . They can be tested individualy . If intrested with how HISA will work for the long term this repo will explain everything . 
 
-TO run the HISA  locally access this repo : https://github.com/Drekahshi/HISA.git
+To run the HISA  locally access this repo : https://github.com/Drekahshi/HISA.git
 
 
 HEDERA CERTIFICATE
@@ -343,7 +344,7 @@ Follow these steps to clone, set up, and run the project locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone 
+   git clone https://github.com/Drekahshi/HISA.git
    cd HISA
    ```
 
