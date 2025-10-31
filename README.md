@@ -250,9 +250,7 @@ Not just a product—**a platform** for:
 
 FOR THE HACKERTHON JUDGES
 
-This repo has several branches the main has md files about the project the other branches are features that are to be implemented in due time . They can be tested individualy . If intrested with how HISA will work for the long term this repo will explain everything . 
-
-To run the HISA  locally access this repo : https://github.com/Drekahshi/HISA.git
+ This repo has 5 branches implementing diffrent feature in  MVP Proof of concept testing HISA features testing any of the branches are testable locally.
 
 
 HEDERA CERTIFICATE
