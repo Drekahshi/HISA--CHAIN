@@ -1,4 +1,7 @@
+HISA Explained https://youtu.be/kN2nSgrrizw?si=UvdRcJ4VqjDmm4Ix
 
+
+Hisa video 2 https://youtu.be/YaGiw7D4OMM?si=3iiiQnQFelj4ZTN1
 
 
 # 🌍 HISA PEOPLES CHAIN  
